@@ -34,7 +34,6 @@ class CategoryController extends Controller
         $request->validate([
             'name' => 'required|unique:categories',
             'description' => 'required',
-            'category_img' => 'file|mimes:jpg,jpeg,png,gif',
         ], [
             'name.required' => 'Tên loại sản phẩm không được để trông',
             'name.unique' => 'Tên đã tồn tại',
@@ -44,11 +43,6 @@ class CategoryController extends Controller
         ]);
 
         $data = $request->only('name', 'description');
-        $img_name = $request->category_img->hashName();
-        if ($img_name) {
-            $request->category_img->move(public_path('uploads/category/'), $img_name);
-            $data['image'] = $img_name;
-        }
         // dd($data);
         if(Category::create($data)) {
             return redirect()->route('category.index')->with('success', 'Thêm mới thành công');

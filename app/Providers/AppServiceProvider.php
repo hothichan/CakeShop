@@ -23,7 +23,9 @@ class AppServiceProvider extends ServiceProvider
     {
         view()->composer(['master.main', 'home.cart', 'home.checkout'], function($view) {
             $user_cart = cart::where('user_id', auth()->id())->first();
-            $view->with(compact('user_cart'));
+            if($user_cart !== null) {
+                $view->with(compact('user_cart'));
+            }
         });
 
         Paginator::useBootstrap();

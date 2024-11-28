@@ -69,7 +69,6 @@
                                         <th scope="col">Số thứ tự</th>
                                         <th scope="col">Mã loại sả phẩm</th>
                                         <th scope="col">Tên loại sản phẩm</th>
-                                        <th scope="col">Hình ảnh</th>
                                         <th scope="col">Mô tả</th>
                                         <th scope="col"></th>
                                     </tr>
@@ -83,9 +82,6 @@
                                             <td>{{ $i++ }}</td>
                                             <td>{{ $category->id }}</td>
                                             <td>{{ $category->name }}</td>
-                                            <td>
-                                                <img src="uploads/category/{{ $category->image }}" alt="">
-                                            </td>
                                             <td>{{ $category->description }}</td>
                                             <td>
                                                 
