@@ -154,16 +154,19 @@
                                         <a href="{{ route('shop.details', $productItem->id) }}"><img width="350" height="350" src="uploads/product/{{$productItem->image}}" alt="Product"></a>
                                         <ul class="product-item__meta">
                                             <li class="product-item__meta-action">
-                                                <a class="shadow-1 labtn-icon-quickview" href="#/" data-bs-tooltip="tooltip" data-bs-placement="top" title="Quick View" data-bs-toggle="modal" data-bs-target="#exampleProductModal"></a>
+                                                <button class="addToCart shadow-1 labtn-icon-cart"
+                                                    data-product_id= "{{$productItem->id}}" 
+                                                    data-url= "{{ route('home.add_to_cart') }}" 
+                                                ></button>
                                             </li>
                                             <li class="product-item__meta-action">
-                                                <a class="shadow-1 labtn-icon-cart" href="#/" data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to Cart" data-bs-toggle="modal" data-bs-target="#modalCart"></a>
-                                            </li>
-                                            <li class="product-item__meta-action">
-                                                <a class="shadow-1 labtn-icon-wishlist" href="#/" data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to wishlist" data-bs-toggle="modal" data-bs-target="#modalWishlist"></a>
-                                            </li>
-                                            <li class="product-item__meta-action">
-                                                <a class="shadow-1 labtn-icon-compare" href="#/" data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to compare" data-bs-toggle="modal" data-bs-target="#modalCompare"></a>
+                                                <button class="favorited shadow-1 labtn-icon-wishlist" 
+                                                    data-product_id= "{{$productItem->id}}"
+                                                    data-url="{{route('home.favorited')}}"
+                                                    @if ($productItem->favorited)
+                                                        style="background-color: #bc8157"
+                                                    @endif
+                                                ></button>
                                             </li>
                                         </ul>
                                     </div>
@@ -189,16 +192,19 @@
                                         <a href="{{ route('shop.details', $productItem->id) }}"><img width="350" height="350" src="uploads/product/{{$productItem->image}}" alt="Product"></a>
                                         <ul class="product-item__meta">
                                             <li class="product-item__meta-action">
-                                                <a class="shadow-1 labtn-icon-quickview" href="#/" data-bs-tooltip="tooltip" data-bs-placement="top" title="Quick View" data-bs-toggle="modal" data-bs-target="#exampleProductModal"></a>
+                                                <button class="addToCart shadow-1 labtn-icon-cart"
+                                                    data-product_id= "{{$productItem->id}}" 
+                                                    data-url= "{{ route('home.add_to_cart') }}" 
+                                                ></button>
                                             </li>
                                             <li class="product-item__meta-action">
-                                                <a class="shadow-1 labtn-icon-cart" href="#/" data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to Cart" data-bs-toggle="modal" data-bs-target="#modalCart"></a>
-                                            </li>
-                                            <li class="product-item__meta-action">
-                                                <a class="shadow-1 labtn-icon-wishlist" href="#/" data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to wishlist" data-bs-toggle="modal" data-bs-target="#modalWishlist"></a>
-                                            </li>
-                                            <li class="product-item__meta-action">
-                                                <a class="shadow-1 labtn-icon-compare" href="#/" data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to compare" data-bs-toggle="modal" data-bs-target="#modalCompare"></a>
+                                                <button class="favorited shadow-1 labtn-icon-wishlist" 
+                                                    data-product_id= "{{$productItem->id}}"
+                                                    data-url="{{route('home.favorited')}}"
+                                                    @if ($productItem->favorited)
+                                                        style="background-color: #bc8157"
+                                                    @endif
+                                                ></button>
                                             </li>
                                         </ul>
                                     </div>
@@ -223,16 +229,19 @@
                                         <a href="{{ route('shop.details', $productItem->id) }}"><img width="350" height="350" src="uploads/product/{{$productItem->image}}" alt="Product"></a>
                                         <ul class="product-item__meta">
                                             <li class="product-item__meta-action">
-                                                <a class="shadow-1 labtn-icon-quickview" href="#/" data-bs-tooltip="tooltip" data-bs-placement="top" title="Quick View" data-bs-toggle="modal" data-bs-target="#exampleProductModal"></a>
+                                                <button class="addToCart shadow-1 labtn-icon-cart"
+                                                    data-product_id= "{{$productItem->id}}" 
+                                                    data-url= "{{ route('home.add_to_cart') }}" 
+                                                ></button>
                                             </li>
                                             <li class="product-item__meta-action">
-                                                <a class="shadow-1 labtn-icon-cart" href="#/" data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to Cart" data-bs-toggle="modal" data-bs-target="#modalCart"></a>
-                                            </li>
-                                            <li class="product-item__meta-action">
-                                                <a class="shadow-1 labtn-icon-wishlist" href="#/" data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to wishlist" data-bs-toggle="modal" data-bs-target="#modalWishlist"></a>
-                                            </li>
-                                            <li class="product-item__meta-action">
-                                                <a class="shadow-1 labtn-icon-compare" href="#/" data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to compare" data-bs-toggle="modal" data-bs-target="#modalCompare"></a>
+                                                <button class="favorited shadow-1 labtn-icon-wishlist" 
+                                                    data-product_id= "{{$productItem->id}}"
+                                                    data-url="{{route('home.favorited')}}"
+                                                    @if ($productItem->favorited)
+                                                        style="background-color: #bc8157"
+                                                    @endif
+                                                ></button>
                                             </li>
                                         </ul>
                                     </div>
@@ -257,16 +266,19 @@
                                         <a href="{{ route('shop.details', $productItem->id) }}"><img width="350" height="350" src="uploads/product/{{$productItem->image}}" alt="Product"></a>
                                         <ul class="product-item__meta">
                                             <li class="product-item__meta-action">
-                                                <a class="shadow-1 labtn-icon-quickview" href="#/" data-bs-tooltip="tooltip" data-bs-placement="top" title="Quick View" data-bs-toggle="modal" data-bs-target="#exampleProductModal"></a>
+                                                <button class="addToCart shadow-1 labtn-icon-cart"
+                                                    data-product_id= "{{$productItem->id}}" 
+                                                    data-url= "{{ route('home.add_to_cart') }}" 
+                                                ></button>
                                             </li>
                                             <li class="product-item__meta-action">
-                                                <a class="shadow-1 labtn-icon-cart" href="#/" data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to Cart" data-bs-toggle="modal" data-bs-target="#modalCart"></a>
-                                            </li>
-                                            <li class="product-item__meta-action">
-                                                <a class="shadow-1 labtn-icon-wishlist" href="#/" data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to wishlist" data-bs-toggle="modal" data-bs-target="#modalWishlist"></a>
-                                            </li>
-                                            <li class="product-item__meta-action">
-                                                <a class="shadow-1 labtn-icon-compare" href="#/" data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to compare" data-bs-toggle="modal" data-bs-target="#modalCompare"></a>
+                                                <button class="favorited shadow-1 labtn-icon-wishlist" 
+                                                    data-product_id= "{{$productItem->id}}"
+                                                    data-url="{{route('home.favorited')}}"
+                                                    @if ($productItem->favorited)
+                                                        style="background-color: #bc8157"
+                                                    @endif
+                                                ></button>
                                             </li>
                                         </ul>
                                     </div>

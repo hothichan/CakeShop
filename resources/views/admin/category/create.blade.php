@@ -59,6 +59,17 @@
                                             @enderror
                                         </div>
                                         <div class>
+                                            <label for="" style="font-size: 16px">Hình ảnh</label>
+                                            <input
+                                                type="file"
+                                                class="form-control"
+                                                name="category_img"
+                                            />
+                                            @error('category_img')
+                                                <span style="color: red">{{ $message }}</span>
+                                            @enderror
+                                        </div>
+                                        <div class>
                                             <textarea name="description" id="" cols="30" rows="10"></textarea>
                                             
                                         </div>

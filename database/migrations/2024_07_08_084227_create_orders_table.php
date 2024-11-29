@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->string('phone');
+            $table->string('email');
+            $table->text('address');
             $table->string('status', 100);
             $table->unsignedInteger('user_id');
             $table->timestamps();

@@ -123,11 +123,11 @@
                                 <span class="review-rating-bg">
                                     <span
                                         class="review-rating-active"
-                                        style="width: 90%"
+                                        style="width: {{ $product->average_rating }}%"
                                     ></span>
                                 </span>
                                 <a href="#/" class="review-rating-text"
-                                    >(1 Review)</a
+                                    >({{$product->reviews->count()}} Review)</a
                                 >
                                 
                                 <!-- Price Start -->
@@ -146,23 +146,6 @@
                         </p>
                         <!-- Description End -->
 
-                        
-                        <!-- Product Size Start -->
-                        <div class="product-size mb-5">
-                            <label for="sizeBy">Size</label>
-                            <div class="select-wrapper">
-                                <select name="size" id="sizeBy">
-                                    <option value="manual">
-                                        Chose an option
-                                    </option>
-                                    <option value="large">Large</option>
-                                    <option value="medium">Medium</option>
-                                    <option value="small">Small</option>
-                                </select>
-                            </div>
-                        </div>
-                        <!-- Product Size End -->
-
                         <!-- Product Quantity, Cart Button, Wishlist and Compare Start -->
                         <ul class="product-cta">
                             <li>
@@ -179,7 +162,7 @@
                                         <button class="addToCart btn btn-dark btn-hover-primary"
                                             data-product_id= "{{$product->id}}" 
                                             data-url= "{{ route('home.add_to_cart') }}" 
-                                        >Add to cart</button>
+                                        >Thêm giỏ hàng</button>
                                     </div>
                                 </div>
                                 <!-- Cart Button End -->
@@ -210,33 +193,7 @@
                                 <!-- Action Button End -->
                             </li>
                         </ul>
-                        <!-- Product Quantity, Cart Button, Wishlist and Compare End -->
-
-                        <!-- Product Meta Start -->
-                        <ul class="product-meta">
-                            <li class="product-meta-wrapper">
-                                <span class="product-meta-name">SKU:</span>
-                                <span class="product-meta-detail"
-                                    >REF. LA-199</span
-                                >
-                            </li>
-                            <li class="product-meta-wrapper">
-                                <span class="product-meta-name"
-                                    >category:</span
-                                >
-                                <span class="product-meta-detail">
-                                    <a href="#">Cake, </a>
-                                    <a href="#">New</a>
-                                </span>
-                            </li>
-                            <li class="product-meta-wrapper">
-                                <span class="product-meta-name">Tags:</span>
-                                <span class="product-meta-detail">
-                                    <a href="#">Cake 1</a>
-                                </span>
-                            </li>
-                        </ul>
-                        <!-- Product Meta End -->
+                        
 
                         <!-- Product Shear Start -->
                         <div class="product-share">
@@ -286,7 +243,7 @@
                             <div  class="review">
                                 <!-- Review Top Start -->
                                 <div id="comments_prod" class="review-top align-items-center">
-                                    @foreach ($product->reviews as $review)
+                                    @foreach ($reviews as $review)
                                         <!-- Review Details Start -->
                                         <div class="review_details ms-3 mb-5">
                                             <!-- Review Title & Date Start -->
@@ -315,6 +272,10 @@
                                         </div>
                                         <!-- Review Details End -->
                                     @endforeach
+                                    <!-- Hiển thị liên kết phân trang -->
+                                    <div class="pagination">
+                                        {{ $reviews->links() }}
+                                    </div>
                                 </div>
                                 <!-- Review Top End -->
 

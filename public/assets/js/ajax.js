@@ -1,39 +1,4 @@
-// $(function () {
-//     const contactForm = $("#contact-form"),
-//         formMessages = $(".form-messege");
-//     contactForm.validate({
-//         submitHandler: function (form) {
-//             $.ajax({
-//                 type: "POST",
-//                 url: form.action,
-//                 data: $(form).serialize(),
-//             })
-//                 .done(function (response) {
-//                     console.log(response);
-//                     formMessages
-//                         .removeClass("error-message text-danger")
-//                         .addClass("success text-success mt-3")
-//                         .text(response);
-//                     // Clear the form.
-//                     form.reset();
-//                 })
-//                 .fail(function (data) {
-//                     // Make sure that the formMessages div has the 'error' class.
-//                     formMessages
-//                         .removeClass("success text-success")
-//                         .addClass("error-message text-danger mt-3");
-//                     // Set the message text.
-//                     if (data.responseText !== "") {
-//                         formMessages.text(data.responseText);
-//                     } else {
-//                         formMessages.text(
-//                             "Oops! An error occured and your message could not be sent."
-//                         );
-//                     }
-//                 });
-//         },
-//     });
-// });
+
 
 $(document).ready(function () {
     var csrfToken = $('meta[name="csrf-token"]').attr("content");
@@ -91,9 +56,9 @@ $(document).ready(function () {
     //favorite item
     $(document).on("click", ".favorited", function () {
         var productId = $(this).data("product_id");
-        var addToCartUrl = $(this).data("url");
+        var favoriteUrl = $(this).data("url");
         $.ajax({
-            url: addToCartUrl,
+            url: favoriteUrl,
             type: "POST",
             data: {
                 _token: csrfToken,
@@ -101,8 +66,10 @@ $(document).ready(function () {
             },
             success: function (response) {
                 if ($(this).css("background-color") === "rgb(188, 129, 87)") {
+                    alert(response.message)
                     $(this).css("background-color", "#ffffff");
                 } else {
+                    alert(response.message)
                     $(this).css("background-color", "#bc8157");
                 }
                 // window.location.reload();

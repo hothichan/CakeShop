@@ -16,10 +16,10 @@ class HomeController extends Controller
 {
     public function index() {
         $itemsList = product::orderBy('name', 'ASC')->take(8)->get();
-        $pastryList = product::where('category_id', 12)->take(8)->get();
-        $muffinList = product::where('category_id', 15)->take(8)->get();
-        $waffleList = product::where('category_id', 13)->take(8)->get();
-        $cupcakeList = product::where('category_id', 14)->take(8)->get();
+        $pastryList = product::where('category_id', 1)->take(8)->get();
+        $muffinList = product::where('category_id', 2)->take(8)->get();
+        $waffleList = product::where('category_id', 3)->take(8)->get();
+        $cupcakeList = product::where('category_id', 4)->take(8)->get();
         return view('home.index', compact('itemsList', 'pastryList', 'muffinList', 'cupcakeList', 'waffleList'));
     }
     public function contact() {
@@ -42,17 +42,23 @@ class HomeController extends Controller
                 'product_id' => $request->product_id,
                 'cart_id' => $cart->id,
             ])->first();
-            if($cartItem) {
+            if($cartItem !== null) {
                 $cartItem->quantity++;
                 $cartItem->save();
             } else {
-                cartItem::create([
+                $createItem = cartItem::create([
                     'product_id' => $request->product_id,
                     'cart_id' => $cart->id,
                     'quantity' => 1,
                 ]);
+                if($createItem) {
+                    return response()->json(['message' => 'Đã thêm vào giỏ hàng'], 200);
+                } else {
+                    return response()->json(['error' => 'Có lỗi trong quá trình thêm vào giỏ hàng'], 403);
+
+                }
             }
-            return response()->json(['message' => 'Đã thêm vào giỏ hàng'], 200);
+
         }
         return response()->json(['error' => 'Bạn cần đăng nhập để thêm sản phẩm vào giỏ hàng'], 403);
 
@@ -110,6 +116,19 @@ class HomeController extends Controller
             return redirect()->route('home')->with('ok', 'Đặt hàng thành công');
         }
 
+    }
+
+    public function cancel_order($order_id) {
+        $order = order::where('id', $order_id)->first();
+        $orderDetail = orderDetail::where('order_id', $order_id)->first();
+        if($order && $order->status === "Chờ xác nhận") {
+            if($orderDetail) {
+                $orderDetail->delete();
+                $order->delete();
+                return redirect()->back()->with('ok', 'Đơn hàng đã hủy');
+            }
+        }
+        return redirect()->back()->with('ok', 'Không thể hủy đơn hàng');
     }
 
     public function favorited(Request $request) {

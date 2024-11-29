@@ -43,6 +43,8 @@ Route::prefix('')->middleware(['admin.login:user'])->group(function() {
     Route::get('/clear_cart/{cart_id}', [HomeController::class, 'clear_cart'])->name('home.clear_cart');
 
     Route::get('/checkout', [HomeController::class, 'checkout'])->name('home.checkout');
+    Route::get('/cancelOrder/{order_id}', [HomeController::class, 'cancel_order'])->name('home.cancelOrder');
+
     Route::post('/checkout', [HomeController::class, 'handle_checkout']);
 
     Route::post('favorited', [HomeController::class, 'favorited'])->name('home.favorited');

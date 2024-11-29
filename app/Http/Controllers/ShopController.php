@@ -19,9 +19,10 @@ class ShopController extends Controller
     }
     public function productDetails(Request $request) {
         $product = product::where('id', $request->id)->first();
+        $reviews = $product->reviews()->paginate(5);
         $relatedProduct = product::where('category_id', $product->category_id)->where('id', '!=', $product->id)->take(8)->get();
         // dd($relatedProduct);
-        return view('shop.pruductDetails', compact('product', 'relatedProduct'));
+        return view('shop.pruductDetails', compact('product', 'relatedProduct', 'reviews'));
     }
 
     public function price_filter() {

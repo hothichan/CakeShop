@@ -41,6 +41,10 @@
                                 <td>{{$order->status}}</td>
                                 <td>{{$total}}</td>
                                 <td><a href="{{route('account.orderDetails', $order->id)}}"><b>Chi tiết</b></a></td>
+                                @if ($order->status === "Chờ xác nhận")
+                                    <td><a href="{{route('home.cancelOrder', $order->id)}}" style="color: red"><b>Hủy đơn</b></a></td>
+                                    
+                                @endif
                             </tr>
                         @endforeach
                     </tbody>
