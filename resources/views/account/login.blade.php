@@ -49,7 +49,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-toast-plugin/1.3.2/jquery.toast.min.js" ></script>
-
+    @if (Session::has('change_password'))
+        <script>
+            $.toast({
+                heading: 'Thành công',
+                text: "{{ Session::get('change_password') }}",
+                showHideTransition: 'fade',
+                position: 'top-center',
+                icon: 'success'
+            })
+        </script>
+    @endif
     @if (Session::has('confirm_email'))
         <script>
             $.toast({

@@ -30,82 +30,38 @@
                             <a href="blog-details.html" class="blog-post_thumb"><img src="assets/images/blog/blog-01.jpg" alt="Blog-Image"></a>
                             <div class="blog-post__content">
                                 <ul class="blog-post__meta">
-                                    <li><a href="blog-details.html">Bakery</a></li>
-                                    <li>-</li>
                                     <li><span>August 14, 2022</span></li>
                                 </ul>
-                                <h3 class="blog-post__title"><a href="blog-details.html">something new about pastry will be developed in 2022</a></h3>
-                                <p class="blog-post__text">Things you should know about cakes Donec sed erat ut magna suscipit mattis. Aliquam erat volutpat. Morbi in orci risus. Donec pretium fringilla blandit. Etiam ut accumsan leo. Aliquam id mi quam.…</p>
-                                <a href="blog-details.html" class="blog-post__btn btn btn-outline-dark btn-hover-primary rounded-pill">Read More</a>
+                                <h3 class="blog-post__title"><a href="blog-details.html">điều gì đó mới mẻ về bánh ngọt sẽ được phát triển vào năm 2022</a></h3>
+                                <p class="blog-post__text">Những điều bạn nên biết về bánh ngọt. Đó là một ngày cuối tuần. Bệnh trong thực hành lâm sàng. Cho đến khi giá của chiếc nhẫn được tâng bốc. Thậm chí như một lớp thời gian. Một số trong đó là tôi.</p>
+                                
                             </div>
                         </div>
                         <div class="blog-post">
                             <a href="blog-details.html" class="blog-post_thumb"><img src="assets/images/blog/blog-02.jpg" alt="Blog-Image"></a>
                             <div class="blog-post__content">
                                 <ul class="blog-post__meta">
-                                    <li><a href="blog-details.html">Bakery</a></li>
-                                    <li>-</li>
                                     <li><span>September 26, 2022</span></li>
                                 </ul>
-                                <h3 class="blog-post__title"><a href="blog-details.html">A year of change in the culinary industry</a></h3>
-                                <p class="blog-post__text">Things you should know about cakes Donec sed erat ut magna suscipit mattis. Aliquam erat volutpat. Morbi in orci risus. Donec pretium fringilla blandit. Etiam ut accumsan leo. Aliquam id mi quam.…</p>
-                                <a href="blog-details.html" class="blog-post__btn btn btn-outline-dark btn-hover-primary rounded-pill">Read More</a>
+                                <h3 class="blog-post__title"><a href="blog-details.html">Một năm thay đổi của ngành ẩm thực</a></h3>
+                                <p class="blog-post__text">Những điều bạn nên biết về bánh ngọt. Đó là một ngày cuối tuần. Bệnh trong thực hành lâm sàng. Cho đến khi giá của chiếc nhẫn được tâng bốc. Thậm chí như một lớp thời gian. Một số trong đó là tôi.</p>
+                                
                             </div>
                         </div>
                         <div class="blog-post">
                             <a href="blog-details.html" class="blog-post_thumb"><img src="assets/images/blog/blog-03.jpg" alt="Blog-Image"></a>
                             <div class="blog-post__content">
                                 <ul class="blog-post__meta">
-                                    <li><a href="blog-details.html">Bakery</a></li>
-                                    <li>-</li>
                                     <li><span>June 02, 2022</span></li>
                                 </ul>
-                                <h3 class="blog-post__title"><a href="blog-details.html">Things you should know about cakes</a></h3>
-                                <p class="blog-post__text">Things you should know about cakes Donec sed erat ut magna suscipit mattis. Aliquam erat volutpat. Morbi in orci risus. Donec pretium fringilla blandit. Etiam ut accumsan leo. Aliquam id mi quam.…</p>
-                                <a href="blog-details.html" class="blog-post__btn btn btn-outline-dark btn-hover-primary rounded-pill">Read More</a>
+                                <h3 class="blog-post__title"><a href="blog-details.html">Những điều bạn nên biết về bánh ngọt</a></h3>
+                                <p class="blog-post__text">Những điều bạn nên biết về bánh ngọt. Đó là một ngày cuối tuần. Bệnh trong thực hành lâm sàng. Cho đến khi giá của chiếc nhẫn được tâng bốc. Thậm chí như một lớp thời gian. Một số trong đó là tôi.</p>
+                                
                             </div>
                         </div>
-                        <div class="blog-post">
-                            <a href="blog-details.html" class="blog-post_thumb"><img src="assets/images/blog/blog-04.jpg" alt="Blog-Image"></a>
-                            <div class="blog-post__content">
-                                <ul class="blog-post__meta">
-                                    <li><a href="blog-details.html">Bakery</a></li>
-                                    <li>-</li>
-                                    <li><span>July 14, 2022</span></li>
-                                </ul>
-                                <h3 class="blog-post__title"><a href="blog-details.html">A year of change in the culinary industry</a></h3>
-                                <p class="blog-post__text">Things you should know about cakes Donec sed erat ut magna suscipit mattis. Aliquam erat volutpat. Morbi in orci risus. Donec pretium fringilla blandit. Etiam ut accumsan leo. Aliquam id mi quam.…</p>
-                                <a href="blog-details.html" class="blog-post__btn btn btn-outline-dark btn-hover-primary rounded-pill">Read More</a>
-                            </div>
-                        </div>
-                        <div class="blog-post">
-                            <a href="blog-details.html" class="blog-post_thumb"><img src="assets/images/blog/blog-05.jpg" alt="Blog-Image"></a>
-                            <div class="blog-post__content">
-                                <ul class="blog-post__meta">
-                                    <li><a href="blog-details.html">Bakery</a></li>
-                                    <li>-</li>
-                                    <li><span>June 02, 2022</span></li>
-                                </ul>
-                                <h3 class="blog-post__title"><a href="blog-details.html">New discoveries in 2021</a></h3>
-                                <p class="blog-post__text">Things you should know about cakes Donec sed erat ut magna suscipit mattis. Aliquam erat volutpat. Morbi in orci risus. Donec pretium fringilla blandit. Etiam ut accumsan leo. Aliquam id mi quam.…</p>
-                                <a href="blog-details.html" class="blog-post__btn btn btn-outline-dark btn-hover-primary rounded-pill">Read More</a>
-                            </div>
-                        </div>
-                        <div class="blog-post">
-                            <a href="blog-details.html" class="blog-post_thumb"><img src="assets/images/blog/blog-06.jpg" alt="Blog-Image"></a>
-                            <div class="blog-post__content">
-                                <ul class="blog-post__meta">
-                                    <li><a href="blog-details.html">Bakery</a></li>
-                                    <li>-</li>
-                                    <li><span>July 14, 2022</span></li>
-                                </ul>
-                                <h3 class="blog-post__title"><a href="blog-details.html">A Day In Life Travel With Wife</a></h3>
-                                <p class="blog-post__text">Things you should know about cakes Donec sed erat ut magna suscipit mattis. Aliquam erat volutpat. Morbi in orci risus. Donec pretium fringilla blandit. Etiam ut accumsan leo. Aliquam id mi quam.…</p>
-                                <a href="blog-details.html" class="blog-post__btn btn btn-outline-dark btn-hover-primary rounded-pill">Read More</a>
-                            </div>
-                        </div>
+                        
 
-                        <div class="shop-bottombar mt-0">
+                        {{-- <div class="shop-bottombar mt-0">
                             <ul class="pagination">
                                 <li class="disabled"><a href="#prev">←</a></li>
                                 <li><a class="active" href="#page=1">1</a></li>
@@ -115,7 +71,7 @@
                                 <li><a href="#page=5">5</a></li>
                                 <li><a href="#next">→</a></li>
                             </ul>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-12">
@@ -123,29 +79,26 @@
                         <div class="sidebars_inner">
 
                             <!-- Search Widget Start -->
-                            <form action="#" class="sidebars_search">
+                            {{-- <form action="#" class="sidebars_search">
                                 <input type="text" placeholder="Search Here" class="sidebars_search__input">
                                 <button class="sidebars_search__btn"><i class="lastudioicon-zoom-1"></i></button>
-                            </form>
+                            </form> --}}
                             <!-- Search Widget End -->
 
                             <!-- Category Widget Start -->
                             <div class="sidebars_widget">
-                                <h3 class="sidebars_widget__title">Category</h3>
+                                <h3 class="sidebars_widget__title">Sản phẩm</h3>
                                 <ul class="sidebars_widget__category">
-                                    <li><a href="blog-details.html">Cake</a></li>
-                                    <li><a href="blog-details.html">Cupcake</a></li>
-                                    <li><a href="blog-details.html">Donut</a></li>
-                                    <li><a href="blog-details.html">Muffin</a></li>
-                                    <li><a href="blog-details.html">New</a></li>
-                                    <li><a href="blog-details.html">Uncategorized</a></li>
-                                    <li><a href="blog-details.html">Waffle</a></li>
+                                    @foreach ($globalVariableCategory as $category)
+                                        <li><a href="{{ route('shop.product', $category->id) }}">{{ $category->name }}</a></li>
+                                        
+                                    @endforeach
                                 </ul>
                             </div>
                             <!-- Category Widget End -->
 
                             <!-- Popular Post Widget Start -->
-                            <div class="sidebars_widget">
+                            {{-- <div class="sidebars_widget">
                                 <h3 class="sidebars_widget__title">Popular posts</h3>
                                 <ul class="sidebars_widget__post">
                                     <!-- Single Post Start -->
@@ -182,11 +135,11 @@
                                     </li>
                                     <!-- Single Post End -->
                                 </ul>
-                            </div>
+                            </div> --}}
                             <!-- Popular Post Widget End -->
 
                             <!-- Popular Post Widget Start -->
-                            <div class="sidebars_widget">
+                            {{-- <div class="sidebars_widget">
                                 <h3 class="sidebars_widget__title">Archives</h3>
                                 <div class="select-wrapper">
                                     <select class="form-field">
@@ -197,7 +150,7 @@
                                         <option>May 2022</option>
                                     </select>
                                 </div>
-                            </div>
+                            </div> --}}
                             <!-- Popular Post Widget End -->
 
                             <!-- Instagram Widget Start -->
@@ -233,7 +186,7 @@
                             <!-- Instagram Widget End -->
 
                             <!-- Tags Widget Start -->
-                            <div class="sidebars_widget">
+                            {{-- <div class="sidebars_widget">
                                 <h3 class="sidebars_widget__title">Tags</h3>
                                 <ul class="sidebars_widget__tags">
                                     <li><a href="blog-details.html">Cake, </a></li>
@@ -243,11 +196,11 @@
                                     <li><a href="blog-details.html">New, </a></li>
                                     <li><a href="blog-details.html">Waffle</a></li>
                                 </ul>
-                            </div>
+                            </div> --}}
                             <!-- Tags Widget End -->
 
                             <!-- Banner Widget Start -->
-                            <div class="sidebars_widget">
+                            {{-- <div class="sidebars_widget">
                                 <a href="shop.html" class="sidebars_widget__banner">
                                     <img src="assets/images/banner/sidebarbanner.jpg" alt="banner-Image">
 
@@ -255,7 +208,7 @@
                                         <span class="banner-content_title">Check it now</span>
                                     </div>
                                 </a>
-                            </div>
+                            </div> --}}
                             <!-- Banner Widget End -->
 
                         </div>

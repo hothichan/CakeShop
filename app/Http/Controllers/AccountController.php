@@ -127,7 +127,7 @@ class AccountController extends Controller
         return view('account.orderDetails', compact('orderDetails'));
     }
 
-    private function check_change_password(Request $request) {
+    public function check_change_password(Request $request) {
         $auth = auth()->user();
         $request->validate([
             'old_password' => ['required', function($attr, $val, $fail) use($auth) {
@@ -148,7 +148,7 @@ class AccountController extends Controller
         $acc = User::where('email', $auth->email)->update($data);
         if($acc) {
             auth()->logout();
-            return redirect()->route('account.login')->with('change_password', 'Cập nhật mật khẩu thành công thành công');
+            return redirect()->route('account.login')->with('change_password', 'Cập nhật mật khẩu thành công thành công! vui lòng đăng nhập lại');
         } 
         return redirect()->back()->with('no_change_password', 'Cập nhật thông tin không thành công');
     }
@@ -200,7 +200,7 @@ class AccountController extends Controller
             passwordResetToken::deleteToken($token);  // Xóa token sau khi sử dụng
             return redirect()->route('account.login')->with('reset_password', 'Mật khẩu đã được cập nhật thành công');
         }
-        return  redirect()->back()->with('no_reset_password', 'Mật khẩu đã được cập nhật thành công');
+        return  redirect()->back()->with('no_reset_password', 'Mật khẩu không được cập nhật thành công');
     }
 
     public function favorited() {

@@ -49,7 +49,7 @@
                         </div>
                     </div>
                 </form>
-                <form action="" class="mt-4" method="POST">
+                <form action="{{ route('check_change_password') }}" class="mt-4" method="POST">
                     @csrf
                     <div class="row g-4">
                         <div class="col-12">

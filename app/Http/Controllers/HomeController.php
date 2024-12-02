@@ -115,6 +115,7 @@ class HomeController extends Controller
             $auth->carts->items()->delete();
             return redirect()->route('home')->with('ok', 'Đặt hàng thành công');
         }
+        return redirect()->back()->with('error', 'Đặt hàng không thành công');
 
     }
 
@@ -128,7 +129,7 @@ class HomeController extends Controller
                 return redirect()->back()->with('ok', 'Đơn hàng đã hủy');
             }
         }
-        return redirect()->back()->with('ok', 'Không thể hủy đơn hàng');
+        return redirect()->back()->with('error', 'Không thể hủy đơn hàng');
     }
 
     public function favorited(Request $request) {

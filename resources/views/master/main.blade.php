@@ -34,7 +34,8 @@
     <link rel="stylesheet" href="assets/css/ion.rangeSlider.min.css">
     <link rel="stylesheet" href="assets/css/lightgallery-bundle.min.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-toast-plugin/1.3.2/jquery.toast.min.css" integrity="sha512-wJgJNTBBkLit7ymC6vvzM1EcSWeM9mmOu+1USHaRBbHkm6W9EgM0HY27+UtUaprntaYQJF75rc8gjxllKs5OIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Toast CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-toast-plugin/1.3.2/jquery.toast.min.css">
     
     <!-- Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -586,7 +587,6 @@
     <script src="assets/js/ion.rangeSlider.min.js"></script>
     <script src="assets/js/lightgallery.min.js"></script>
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/ajax.js"></script>
     <script src="assets/js/jquery.validate.min.js"></script>
 
     <!-- Activation JS -->
@@ -594,10 +594,11 @@
     <script src="assets/js/starRating.js"></script>
 
     <!-- Toast js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-toast-plugin/1.3.2/jquery.toast.min.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
-    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Toast JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-toast-plugin/1.3.2/jquery.toast.min.js"></script>
+
 
     @yield('script')
     
@@ -610,6 +611,7 @@
                 position: 'top-center',
                 icon: 'success'
             })
+            
         </script>
     @endif
     @if (Session::has('error'))
@@ -690,6 +692,7 @@
     @endif
 </body>
 
+<script src="assets/js/ajax.js"></script>
 
 <!-- Mirrored from htmldemo.net/bakerfresh/bakerfresh/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Jul 2024 09:34:16 GMT -->
 </html>

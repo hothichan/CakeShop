@@ -59,7 +59,8 @@ Route::group(['prefix'=> '/account'], function() {
 
     //profile
     Route::get('/profile', [AccountController::class, 'profile'])->name('account.profile');
-    Route::post('profile', [AccountController::class, 'check_profile']);
+    Route::post('/profile', [AccountController::class, 'check_profile']);
+    Route::post('/profile/change_password', [AccountController::class, 'check_change_password'])->name('check_change_password');
     
     //order route
     Route::get('/order', [AccountController::class, 'order'])->name('account.order');

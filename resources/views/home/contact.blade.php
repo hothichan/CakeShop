@@ -46,36 +46,36 @@
                 </div>
                 <div class="col-md-6">
                     <div class="contact-section2_formbg">
-                        <h2 class="contact-section2_form__title">Say Something...</h2>
+                        <h2 class="contact-section2_form__title">Nói điều gì đó...</h2>
                         <form class="contact-section2_form" id="contact-form" action="https://htmldemo.net/bakerfresh/bakerfresh/assets/php/mail.php" method="post">
                             <div class="row">
                                 <div class="col-sm-6 col-6 form-p">
                                     <div class="form-group">
-                                        <label>First Name*</label>
+                                        <label>Họ*</label>
                                         <input class="form-field" type="text" name="name">
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-6 form-p">
                                     <div class="form-group">
-                                        <label>Last Name*</label>
+                                        <label>Tên*</label>
                                         <input class="form-field" type="text" name="lastname">
                                     </div>
                                 </div>
                                 <div class="col-md-12 form-p">
                                     <div class="form-group">
-                                        <label>Email Address*</label>
+                                        <label>Email*</label>
                                         <input class="form-field" type="email" name="email">
                                     </div>
                                 </div>
                                 <div class="col-md-12 form-p">
                                     <div class="form-group">
-                                        <label>Message*</label>
+                                        <label>Lời nhắn*</label>
                                         <textarea class="form-control text-area" name="message"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-md-12 form-p">
                                     <div class="form-group mb-0 d-flex justify-content-center">
-                                        <button class="btn btn-secondary btn-hover-primary" type="submit" value="Send Massage">Send Message</button>
+                                        <button class="btn btn-secondary btn-hover-primary" type="submit" value="Send Massage">Gửi tin nhắn</button>
                                     </div>
                                 </div>
                             </div>
